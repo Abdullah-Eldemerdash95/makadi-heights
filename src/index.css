@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .typeABtn {
+    @apply uppercase bg-white text-[#1A3143] border-[1px] border-white h-[50px] text-[14px] leading-[19px] font-[400] font-['Shanti'] text-center	tracking-[0.3px];
+  }
+  h2,h3 {
+    @apply font-[400] font-['Diodrum-Arabic'];
+  }
+  p {
+    @apply font-[600] font-['SharpSansNo1_Medium'];
+  }
+  .iconsNames li:not(:nth-of-type(5)):not(:nth-of-type(6)) {
+    @apply flex items-center flex-col justify-center relative after:absolute after:content-[url('/LineUL.svg')] after:bottom-[-12.6px];
+  }
+  .iconsNames li span {
+    @apply font-['Drodrum_Arabic']  font-[400] text-[18px] leading-[25px]  flex items-center flex-col justify-center; 
+  }
+  .iconsNames li p {
+    @apply text-[#757575] leading-[23px] text-[16px] line-clamp-2 h-[59px] text-center;
+  }
+  .iconsNames li svg{
+    @apply fill-[#268FB4]
+  }
+  .iconsNames li.active svg{
+    @apply fill-[#21436E]
+  }
+  .iconsNames li:hover svg{
+    @apply fill-[#3d5f8d] 
+  }
+  .iconsNames li:hover span span:nth-of-type(2){
+    @apply text-[#3d5f8d] 
+  }
+  .iconsNames li:hover > span {
+    @apply cursor-pointer
+  }
+  .pointsPagination li.active{
+    @apply bg-[url('/DarkGreyLi.svg')] w-[15px] h-[15px]
+  }
+  .pointsPagination li{
+    @apply bg-[url('/whiteGreyLi.svg')] w-[15px] h-[15px]
+  }
+  .inputNewStyle {
+    @apply bg-transparent pb-[17px] border-b-[1px] border-[#646464] placeholder:text-[#21436E]/[.8] focus:outline-none  focus:border-b-[1px] focus:border-[#646464]
+    focus:text-[#21436E] w-full font-[600] font-['Sharp_Sans_No1_Medium'] leading-[25px];
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  @font-face {
+    font-family: "Shanti";
+    src: url("./fonts/Shanti-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'SharpSansNo1_Medium';
+    src: url("./fonts/SharpSansNo1-Medium.ttf");
+  }
+  @font-face {
+    font-family: 'Diodrum-Arabic';
+    src: url("./fonts/alfont_com_AlFont_com_DiodrumArabic-Regular.ttf");
+  }
+}
+
