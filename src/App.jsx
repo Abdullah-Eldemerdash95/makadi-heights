@@ -49,8 +49,8 @@ function App() {
 
     // loader animations 
   useEffect(() => {
-    const interval1 = setTimeout(() =>  setLoader("1"), 0);//2000
-    const interval2 = setTimeout(() =>  setLoader(false), 0);//7000
+    const interval1 = setTimeout(() =>  setLoader("1"), 2000);
+    const interval2 = setTimeout(() =>  setLoader(false), 7000);
     return () => clearInterval(interval1,interval2);
   }, []);
   return (    
